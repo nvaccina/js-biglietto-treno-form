@@ -10,42 +10,46 @@
 
   <title>Form biglietto del treno</title>
 </head>
-<body>
+<body class="text-center">
 
-  <div class="container">
+  <h2 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+  <div class="container shadow p-3 mb-5 bg-body-tertiary rounded">
 
-    <h1 id="title"></h1>
+    
 
     <div class="row">
 
       <div class="col">
-        <label for="name">Nome Cognome</label><br>
-        <input type="text" id="name" placeholder="Inserisci nome e cognome" value="">      
+        <label class="purple fw-bold pb-3" for="name">Nome Cognome</label><br>
+        <input class="inp_purp text-center" type="text" id="name" placeholder="Nome e cognome" value="">      
         
       </div>
 
       <div class="col">
-        <label for="km">Km da percorrere</label><br>
-        <input type="text" id="km" placeholder="Km che vuoi percorrere" value="">
+        <label class="purple fw-bold pb-3" for="km">Km da percorrere</label><br>
+        <input class="inp_purp text-center" type="text" id="km" placeholder="Km che vuoi percorrere" value="">
       </div>
       <div class="col">
 
-        <label for="age">Fascia d'età</label><br>
+        <label class="purple fw-bold pb-3" for="age">Fascia d'età</label><br>
 
-        <select name="age" id="age">
+        <select class="inp_purp text-center" name="age" id="age">
           <option value="Seleziona opzione">Seleziona opzione</option>
-          <option id="minorenne" value="Minorenne">Minorenne</option>
-          <option id="maggiorenne" value="Maggiorenne">Maggiorenne</option>
-          <option id="over65" value="Over 65">Over 65</option>
+          <option value="minorenne">Minorenne</option>
+          <option value="maggiorenne">Maggiorenne</option>
+          <option value="over">Over 65</option>
         </select>        
       </div>
     </div>
 
-    <button id="genera">Genera</button>   
+    <button class="nv_button me-3" id="genera">Genera</button>   
+    <button class="nv_button" id="annulla">Annulla</button>  
 
   </div>
+  <h2 class="title">IL TUO BIGLIETTO</h2>
+  <div class="container shadow p-3 mb-5 bg-body-tertiary rounded">
 
-  <div class="container">
+    
 
     <p id="output"></p>
 

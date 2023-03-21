@@ -12,8 +12,9 @@
 </head>
 <body class="text-center">
 
-  <h2 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-  <div class="container shadow p-3 mb-5 bg-body-tertiary rounded">
+  <h2 class="title py-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+
+  <div class="container shadow p-3 mb-5 bg-body-tertiary rounded text-center">
 
     
 
@@ -46,24 +47,50 @@
     <button class="nv_button" id="annulla">Annulla</button>  
 
   </div>
-  <h2 class="title">IL TUO BIGLIETTO</h2>
-  <div class="container shadow p-3 mb-5 bg-body-tertiary rounded">
 
-    
+  
+  <div id="biglietto" class="container-lg hide">
 
-    <p id="output"></p>
+    <h2 class="title py-3">IL TUO BIGLIETTO</h2>
 
-    <p id="prezzo"></p>
+    <div class="container shadow p-3 mb-5 bg-body-tertiary rounded text-start">
 
+      <h4 class="bold pt-3 ps-1">DETTAGLIO PASSEGGERI</h4>
+  
+      <div class="row px-3">
+  
+        <div class="col-4 bg-secondary h-100 p-3">
+  
+          <h4 class="bold">NOME PASSEGGERO</h4>
+          <h5 class="bold" id="output"></h5>
+  
+        </div>
+
+        <div class="col-8 nv_bord">
+          <table class="w-100 h-100">
+            <thead>
+              <tr>
+                <th class="col-3">Offerta</th>
+                <th class="col-3">Carrozza</th>
+                <th class="col-3">Codice CP</th>
+                <th class="col-3">Costo biglietto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="offerta" scope="col"></td>
+                <td id="carrozza" scope="col"></td>
+                <td id="codice" scope="col"></td>
+                <td id="prezzo" scope="col"></td>
+              </tr>            
+            </tbody>
+          </table>
+  
+        </div>
+      </div>      
+  
+    </div>
   </div>
-
-
-
-
-
-
-
-
 
   <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

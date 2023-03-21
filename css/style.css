@@ -9,13 +9,14 @@ body{
   color: #B91450;
 }
 .inp_purp{
-  border-color: #B91550;
+  border: 2px solid #B91550;
   padding: 5px 15px;
   border-radius: 10px;
 }
 .container{
-  text-align: center;
-  margin: 40px;
+  width: 70%;
+  max-width: 1080px;
+  margin: 0 40px;
   padding: 20px;
   background-color: white;
 }
@@ -24,4 +25,12 @@ body{
   border-radius: 5px;
   color: #B91550;
   font-weight: bold;
+}
+.nv_bord{
+  border-bottom: 1px solid #9D9D9D;
+  border-top: 1px solid #9D9D9D;
+}
+
+.hide{
+  display: none;
 }
